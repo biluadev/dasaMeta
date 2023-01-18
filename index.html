@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="lib/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/dist/assets/owl.theme.default.min.css">
+
 </head>
 <body>
     <div class="page">
@@ -37,7 +41,13 @@
 
         <main>
             <div class="banner">
-                <img src="./asset/Home.jpeg" alt="">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="asset/home.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/home2.jpg" alt=""></div>
+                    <div class="item"><img src="asset/home3.jpg" alt=""></div>
+                </div>
+                
                 <div class="cover">
                     <p>Bem-Vindo a</p>
                     <h1>Dasa <span>Meta</span> Internacional</h1>
@@ -119,7 +129,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div> 
+                </div> 
+
+                <div class="contactos margin">
+                    <h2>Contactos</h2> 
+                    
+                </div>
+
+                <div class="eventos margin">
+                   <h2>Eventos</h2> 
+                </div>
             </section>
         </main>
         <footer>
@@ -152,6 +172,10 @@
     </div>
 
     <script src="https://kit.fontawesome.com/d4bb20e728.js" crossorigin="anonymous"></script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    
     <script src="./main.js"></script>
 </body>
 </html>

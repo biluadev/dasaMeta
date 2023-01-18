@@ -37,3 +37,13 @@ window.addEventListener("scroll", () => {
     }
 })
 
+//owl carousel
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        dots: false
+    });
+  });
+
