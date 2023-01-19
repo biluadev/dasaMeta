@@ -133,8 +133,37 @@
                 </div> 
 
                 <div class="contactos margin">
-                    <h2>Contactos</h2> 
-                    
+                    <form id="my-form">
+                        <fieldset>
+                            <div class="fieldset-wrapper">
+                                <legend>Contacta-nos</legend>
+            
+                                <div class="input-wrapper">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name"/>
+                                </div>
+            
+                                <div class="input-wrapper">
+                                    <label for="phone">Telefone</label>
+                                    <input type="number" id="phone" />
+                                </div>
+            
+                                <div class="input-wrapper">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" />
+                                </div>
+            
+                                <div class="input-wrapper">
+                                    <label for="message">Messagem</label>
+                                    <textarea id="message" ></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <div class="send">
+                        <input class="button" type="submit" value="Salvar evento" form="my-form"> 
+                    </div>
                 </div>
 
                 <div class="eventos margin">
