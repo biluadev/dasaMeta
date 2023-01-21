@@ -148,6 +148,8 @@ nav .menuList {
     display: none;
 }
 
+/* Banner Home */
+
 main .banner {
     position: relative;
     width: 100%;
@@ -232,6 +234,7 @@ section .arrow-top {
      opacity: 0;
      pointer-events: none;
      transition: all .4s;
+     z-index: 999;
 }
 
 .arrow-top:hover {
@@ -243,6 +246,8 @@ section .arrow-top {
     pointer-events: auto;
     opacity: 1;
 }
+
+/* Service */
 
 section .service {
     padding-top: 4rem;
@@ -270,8 +275,10 @@ section .service {
     gap: 1rem;
 }
 
+/* ABOUT */
+
 section .about {    
-    margin-top: 2rem;
+    margin-top: 5rem;
 
     background-color: rgba(211, 211, 211, 0.116);
 }
@@ -284,9 +291,15 @@ section .about {
 
 .content h2 {
     padding-top: 2rem;
-    margin-bottom: 2rem;
 
     text-transform: uppercase;
+}
+
+.content #about_paragraph {
+    text-transform: uppercase;
+    color: rgb(145, 145, 145);
+    
+    margin-bottom: 3rem;
 }
 
 .content2 {
@@ -371,8 +384,6 @@ section .about {
     margin-bottom: 1rem;
 }
 
-
-
 /* Animation Refresh*/
 header {
     animation: topDown 700ms;
@@ -435,6 +446,128 @@ main {
       }
 }
 
+/* EVENT */
+.event {
+    margin-top: 5rem;
+}
+
+.event h2 {
+    text-align: center;
+}
+
+.event p {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(145, 145, 145);
+
+    margin-bottom: 3rem;
+}
+
+.event .itemEtiquet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.event .coverEvent {
+    position: absolute;
+    top: 0;
+
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event img {
+    width: 100%;
+    height: 65vh;
+
+    object-fit: cover;
+    filter:brightness(0.5);
+}
+
+.coverEvent h3 {
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: #000;
+    
+    border-bottom: 2px solid #fff;
+
+    margin-bottom: 2rem;
+} 
+
+.coverEvent p {
+    color: #fff;
+}
+
+footer {
+    display: block;
+    padding-top: 2rem;
+    background: var(--Icons-color);
+}
+
+footer .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.footer .social-network {
+    display: flex;
+    justify-content: center;
+    color: var(--font-color-secondary);
+    gap: 2rem;    
+}
+
+.social-network i {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-network i:first-child {
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-network i:hover {
+    color: #1746A2;
+}
+
+.footer .contactos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--font-color-secondary);
+}
+
+.contactos .tel, .email {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .powered {
+    font-weight: 300;
+    text-align: center;
+    color: var(--font-color-secondary);
+}
+
+.powered span {
+    font-weight: 500;
+}
+
+/* Contact */
 form {
     margin-top: 38px;
     border-radius: 8px 8px 0 0;
@@ -586,68 +719,6 @@ fieldset legend {
     font-size: 16px;
     line-height: 26px;
     color: #fff;
-}
-
-
-footer {
-    display: block;
-    padding-top: 2rem;
-    background: var(--Icons-color);
-}
-
-footer .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
-}
-
-.footer .social-network {
-    display: flex;
-    justify-content: center;
-    color: var(--font-color-secondary);
-    gap: 2rem;    
-}
-
-.social-network i {
-    padding: 5px;
-    border: 1px solid;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.social-network i:first-child {
-    width: 2.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-.social-network i:hover {
-    color: #1746A2;
-}
-
-.footer .contactos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    color: var(--font-color-secondary);
-}
-
-.contactos .tel, .email {
-    display: flex;
-    gap: 1rem;
-}
-
-footer .powered {
-    font-weight: 300;
-    text-align: center;
-    color: var(--font-color-secondary);
-}
-
-.powered span {
-    font-weight: 500;
 }
 
 /* Responsive Desktop */

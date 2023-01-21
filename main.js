@@ -39,11 +39,29 @@ window.addEventListener("scroll", () => {
 
 //owl carousel
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $("#corroselHome").owlCarousel({
         items: 1,
         loop: true,
         autoplay: true,
-        dots: false
+        dots: false,
+        slideTransition: 'linear'
+    });
+
+    $("#corroselEvent").owlCarousel({
+        items: 2,
+        loop: true,
+        autoplay: true,
+        margin: 10,
+        nav: true,
+        slideTransition: 'linear',
+        responsive: {
+             0: {
+                 items: 1
+             },
+             700: {
+                 items: 2
+            }
+        }
     });
   });
 
