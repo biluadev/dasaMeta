@@ -11,7 +11,7 @@ html {
 
 :root {
 
-    /* Font-familys */
+    /* Font-family */
     --ff-body: 'Roboto', sans-serif;
 
     /* Colors Body & Fonts*/
@@ -151,6 +151,9 @@ nav .menuList {
 /* Banner Home */
 
 main .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -174,15 +177,14 @@ main .banner .cover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    width: inherit;
+    height: inherit;
 
     position: absolute;
     top: 0;
-    padding-top: 10rem;
 
-    height: inherit;
-    width: inherit;
-
-    text-align: center;
     text-transform: uppercase; 
     z-index: 1;
 }
@@ -506,6 +508,103 @@ main {
     color: #fff;
 }
 
+/* Contact */
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+form {
+    border-radius: 8px 8px 0 0;
+    min-height: 300px;
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 48px;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset legend {
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+    border-bottom: 1px solid #e6e6f0;
+    padding-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+
+    color: #4e4958;
+}
+
+.input-wrapper input, 
+.input-wrapper textarea {
+    background: #fafafc;
+
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+    outline: none;
+    height: 56px;
+    
+    padding: 0 24px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #c1bccc;
+}
+
+.input-wrapper textarea {
+    padding: 24px;
+    height: 168px;
+    resize: none;
+}
+
+.send {
+    width: 100%;
+}
+
+.send .button {
+    width: 100%;
+    height: 56px;
+    background: var(--Icons-color);
+    border: 0;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
 footer {
     display: block;
     padding-top: 2rem;
@@ -543,7 +642,7 @@ footer .footer {
     color: #1746A2;
 }
 
-.footer .contactos {
+.footer .contact {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -552,7 +651,7 @@ footer .footer {
     color: var(--font-color-secondary);
 }
 
-.contactos .tel, .email {
+.contact .tel, .email {
     display: flex;
     gap: 1rem;
 }
@@ -565,160 +664,6 @@ footer .powered {
 
 .powered span {
     font-weight: 500;
-}
-
-/* Contact */
-form {
-    margin-top: 38px;
-    border-radius: 8px 8px 0 0;
-    min-height: 300px;
-    padding: 64px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-}
-
-fieldset {
-    border: none;
-}
-
-.fieldset-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-fieldset legend {
-    font-family: 'Archivo', sans-serif;
-    font-weight: 600px;
-    font-size: 24px;
-    line-height: 34px;
-
-    width: 100%;
-    border-bottom: 1px solid #e6e6f0;
-    padding-bottom: 16px;
-}
-
-.input-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-wrapper label,
-.checkbox-wrapper {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 8px;
-
-    color: #4e4958;
-}
-
-.input-wrapper label span {
-    margin-left: 12px;
-
-    font-size: 12px;
-    line-height: 20px;
-    color: #c1bccc;
-}
-
-.input-wrapper input, 
-.input-wrapper textarea, 
-.input-wrapper select {
-    background: #fafafc;
-
-    border: 1px solid #e6e6f0;
-    border-radius: 8px;
-    outline: none;
-    height: 56px;
-    
-    padding: 0 24px;
-
-    font-size: 16px;
-    line-height: 26px;
-
-    color: #c1bccc;
-}
-
-.input-wrapper textarea {
-    padding: 0;
-    height: 168px;
-    resize: none;
-}
-
-.input-wrapper select {
-    appearance: none; /* Remove a seta do select */
-
-    background-image: url(./arrow.svg);
-}
-
-.col-3 {
-    display: flex;
-    gap: 20px;
-}
-
-.col-3 > div:nth-child(1) {
-    width: 100%;
-}
-
-.checkbox-wrapper {
-    position: relative;
-}
-
-.checkbox-wrapper label {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    margin: 0;
-}
-
-.checkbox-wrapper input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    opacity: 0;
-}
-
-.checkbox-wrapper label::before {
-    content: '';
-    width: 24px;
-    height: 24px;
-
-    border: 1px solid #e6e6f0;
-    border-radius: 8px;
-}
-
-.checkbox-wrapper input:checked + label::before {
-    background: #42d3ff;
-}
-
-.checkbox-wrapper input:focus + label::before {
-    outline: 2px solid #000;
-}
-
-.send {
-    height: 136px;
-    display: flex;
-    flex-direction: column;
-
-    padding: 40px 64px;
-
-    border-radius: 0 0 8px 8px;
-}
-
-.send .button {
-    height: 56px;
-    background: #04d361;
-    border: 0;
-    border-radius: 8px;
-    font-family: 'Archivo';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-    color: #fff;
 }
 
 /* Responsive Desktop */
@@ -819,5 +764,17 @@ fieldset legend {
     .content2 img {
         width: 100%;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 500px) {
+
+    form {
+        align-items: center;
+    };
+
+    .send .button{
+        background-color: red;
+        width: 100%;
     }
 }
